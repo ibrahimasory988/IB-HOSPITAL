@@ -1,0 +1,416 @@
+* {
+    padding: 2px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --var_bg: rgb(107, 178, 222);
+    --var_text: #18388fd3;
+    --var_bg_clair: rgb(216, 225, 227);
+    --var_text_clair: #579f7e;
+    --var_to_clair: #29278f86;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--var_text);
+    box-shadow: 0 0 7px black;
+    position: sticky;
+    top: 0;
+    /* z-index: 100; */
+}
+
+header h1 {
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--var_bg);
+}
+
+nav ul li a:hover {
+    color: var(--var_text_clair);
+}
+
+header button {
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: var(--var_bg_clair);
+    text-decoration: none;
+    list-style: none;
+}
+#btn-connexion{
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: var(--var_bg_clair);
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Hero*/
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 10px;
+    background-color: rgba(140, 149, 156, 0.105);
+    margin-top: 1rem;
+}
+
+.text-hero {
+    width: 40%;
+}
+
+#hero .text-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#hero .text-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: start;
+    width: 100%;
+}
+
+#inscription {
+    background-color: var(--var_text);
+    border: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#inscription:hover {
+    background-color: greenyellow;
+    transform: translateX(5px);
+}
+
+.img-hero {
+    flex: 1;
+}
+
+.img-hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Services */
+#service {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#pole-detail{
+    padding: 1rem;
+    margin-top: 2rem;
+}
+#pole-detail h2{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+#service h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.partPole {
+    display: flex;
+    gap: 1rem;
+}
+
+.pole {
+    border-radius: 5px;
+    border: 1px solid var(--var_bg);
+    padding: 1rem;
+    flex: 1;
+}
+
+.pole h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Apropos et Contact */
+#Apropos {
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.apropos {
+    padding: 1rem;
+    border: 1px solid var(--var_text);
+    border-radius: 15%;
+    flex: 1;
+}
+
+.apropos h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* padding: 1rem; */
+    box-shadow: 5px 5px 12px;
+    border-radius: 5%;
+    flex: 1;
+    width: 400px;
+}
+.login-container h2{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    color: rgb(63, 50, 205);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-container form button{
+    width: 100%;
+    padding: 12px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container form button:hover{
+    background: rgb(48, 171, 223) ;
+}
+
+.login-btn button a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.contactez {
+    padding: 1rem;
+    box-shadow: 5px 5px 12px;
+    border-radius: 5%;
+    flex: 1;
+}
+
+.contactez h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contactez form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input,
+form textarea {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 1rem;
+    background-color: var(--var_text);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10%;
+    box-shadow: 2px 2px 7px;
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    box-shadow: 0px -5px 20px black;
+    margin-top: 2rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Medias Queries et Responsivité */
+
+/* pour les tablettes */
+@media(max-width:768px) {
+    header {
+        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.3rem;
+        min-height: 2.5rem;
+        height: auto;
+
+    }
+
+    nav ul {
+
+        flex-direction:column;
+        gap: 0.2rem;
+        align-items: center;
+        padding: 0;
+        /* margin: 0.3rem 0; */
+        /* font-size: 1.2rem; */
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+        white-space: nowrap;
+        margin: 0.3rem 0;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: baseline;
+    }
+
+    .text-hero {
+        flex: 1 1 100%;
+    }
+
+    .img-hero {
+        flex: 1 1 100%;
+    }
+
+    #service {
+        flex-direction: column;
+    }
+
+    .partPole {
+        flex-direction: column;
+    }
+
+    .pole {
+        max-width: 100%;
+    }
+
+    #Apropos {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .apropos {
+        flex: 1 1 100%;
+    }
+
+    .contactez {
+        flex: 1 1 100%;
+    }
+    .login-container{
+        margin-left: auto;
+        margin-right:auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:480px) {
+
+    #hero,
+    #service,
+    #Apropos {
+        padding: 1.5rem;
+    }
+
+    .pole {
+        padding: 1.5rem;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    /* Center articles and pole cards on small screens */
+    article,
+    .pole {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    /* Center images inside articles/poles */
+    article img,
+    .pole img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Ensure column containers center their children */
+    .partPole,
+    #Apropos {
+        align-items: center;
+    }
+
+    header h1 {
+        white-space: nowrap;
+        font-size: 1.1rem;
+    }
+    .login-container{
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}

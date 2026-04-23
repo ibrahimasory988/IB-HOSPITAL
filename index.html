@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myhospi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>IB HOSPITAL</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#Apropos">À propos</a></li>
+                <li><a href="#service">Pôles de soins</a></li>
+                </ul>
+        </nav>
+        <button type="button" id="btn-connexion"><a href="login_connexion/registre.html">Se connecter</a></button>
+        
+    </header>
+
+    <main>
+
+        
+        <section id="hero">
+            <div class="text-hero">
+                <h2>Bienvenue à IB HOSPITAL</h2>
+                <p>
+                    IB HOSPITAL vous accueille avec des soins de santé modernes et personnalisés.
+                    Notre équipe dédiée est prê*te à vous accompagner à chaque étape.
+                    to;e à vous accompagner à chaque étape.
+                </p>
+                <button id="inscription">Inscrivez-vous</button>
+            </div>  
+
+            <div class="img-hero">
+                <img src="image/hopital.png" alt="Vue de l'hôpital IB HOSPITAL">
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section id="service">
+            <h2>Pôles de soins</h2>
+
+            <div class="partPole">
+                <div class="pole">
+                    <h3><a href="medecine generale/medecine-generale.html">Médecine Générale</a></h3>
+                    <p>Soins de santé complets pour vous et votre famille.</p>
+                </div>
+
+                <div class="pole">
+                    <h3><a href="chirurgie/chirurgie.html">Chirurgie</a></h3>
+                    <p>Services chirurgicaux spécialisés et interventions.</p>
+                </div>
+
+                <div class="pole">
+                    <h3><a href="maternité/maternite-pediatrie.html">Maternité-Pédiatrie</a></h3>
+                    <p>Accompagnement pour la maternité et soins pédiatriques.</p>
+                </div>
+                <div class="pole">
+                    <h3><a href="urgence/Urgence.html">Urgences</a></h3>
+                    <p>Assistance rapide et efficace pour toutes vos urgences médicales.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="Apropos">
+            <div class="apropos">
+                <h2>À propos</h2>
+                <p>
+                    IB HOSPITAL est un établissement médical dédié au bien-être de ses patients.
+                    Forts de notre expertise, nous mettons votre santé au cœur de nos priorités.
+                </p>
+            </div>
+
+            <div class="contactez">
+                <h2>Rendez-Vous</h2>
+
+                <form action="" method="post">
+                    <label for="nom">Nom</label>
+                    <input id="nom" type="text" name="nom" required>
+
+                    <label for="prenom">Prénom</label>
+                    <input id="prenom" type="text" name="prenom" required>
+
+                    <label for="lieu">Lieu de résidence</label>
+                    <input id="lieu" type="text" name="lieu">
+
+                    <label for="tel">Téléphone</label>
+                    <input id="tel" type="tel" name="telephone" required>
+
+                    <label for="message">Décrivez vos symptômes</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Myhospi. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html> 
